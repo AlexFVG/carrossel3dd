@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: rgb(50, 58, 50);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(252, 250, 252);
+}
+header{
+    
+    background: linear-gradient(rgb(89, 114, 103), rgb(26, 39, 39));
+    text-align:center;
+    justify-content: center;
+    font-family: 'Courier New';
+}
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+
+    }
+
+}
+.imagem:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){
+    background-image: url(https://image.shutterstock.com/mosaic_250/204079/755606782/stock-photo-beautiful-eyes-of-a-wild-wolf-755606782.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://image.shutterstock.com/mosaic_250/277600/24918358/stock-photo-the-king-of-all-animals-portrait-with-copy-space-24918358.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://image.shutterstock.com/mosaic_250/2149922/1466855726/stock-photo-huge-aggressive-mystical-dragon-in-move-creature-with-big-strong-wings-and-powerful-paws-he-opens-1466855726.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://image.shutterstock.com/mosaic_250/247165026/2038427960/stock-photo-curled-octopus-also-known-as-lesser-octopus-uses-jet-propulsion-of-water-to-move-quickly-from-2038427960.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://image.shutterstock.com/mosaic_250/1772438/1468418714/stock-photo-bright-sun-against-dark-starry-sky-in-solar-system-elements-of-this-image-furnished-by-nasa-1468418714.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://image.shutterstock.com/mosaic_250/1772438/1468418714/stock-photo-bright-sun-against-dark-starry-sky-in-solar-system-elements-of-this-image-furnished-by-nasa-1468418714.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://image.shutterstock.com/mosaic_250/206179/1120926170/stock-photo-front-view-of-brown-bear-isolated-on-black-background-portrait-of-kamchatka-bear-ursus-arctos-1120926170.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://image.shutterstock.com/mosaic_250/646780/1099386764/stock-photo-beautiful-panorama-landscape-with-sun-and-forest-and-meadow-at-sunrise-sun-rays-shine-through-1099386764.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    margin-top: 46%;
+    background-color: rgb(32, 44, 41);
+}
+
+
